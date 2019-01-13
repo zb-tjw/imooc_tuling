@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_from_msg_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#f5f5f5"
+        android:background="#bebebe"
+        android:text="2019-1-12 17:33:00"
+        android:layout_gravity="center"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginRight="40dp">
+
+        <LinearLayout
+            android:id="@+id/layout_left_person_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/robatName"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_from_msg_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layout_left_person_info"
+            android:text="你好"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:background="@drawable/chatfrom_bg_normal"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
