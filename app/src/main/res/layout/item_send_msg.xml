@@ -47,8 +47,9 @@
             android:layout_toLeftOf="@id/layout_right_person_info"
             android:text="你好"
             android:gravity="center_vertical"
+            android:layout_centerVertical="true"
             android:textSize="16sp"
-            android:background="@drawable/chatto_bg_normal"/>
+            android:background="@drawable/send"/>
 
     </RelativeLayout>
 
