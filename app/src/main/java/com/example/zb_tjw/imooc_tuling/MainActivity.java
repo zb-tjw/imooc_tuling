@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             ChatMessage fromChatMessage = (ChatMessage) msg.obj;
             mDatas.add(fromChatMessage);
             mAdater.notifyDataSetChanged();
+            lv_msgs.setSelection(mAdater.getCount()-1);//让listView始终显示最底下的数据，也就是实时显示最新消息，防止键盘的遮盖
         }
     };
 
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 mAdater.notifyDataSetChanged();
 
                 ed_input.setText("");//清空输入框文本
+                lv_msgs.setSelection(mAdater.getCount()-1);//让listView始终显示最底下的数据，也就是实时显示最新消息，防止键盘的遮盖
 
                 new Thread(new Runnable() {
                     @Override
