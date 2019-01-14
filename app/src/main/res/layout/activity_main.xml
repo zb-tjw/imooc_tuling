@@ -26,9 +26,9 @@
     <RelativeLayout
         android:id="@+id/layout_bottom"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/bottom_bar">
+        android:background="@drawable/bottom_input_bar">
 
         <Button
             android:id="@+id/btn_send_msg"
@@ -42,12 +42,14 @@
         <EditText
             android:id="@+id/et_input_msg"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/login_edit_normal"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ed_input"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_centerInParent="true"
             android:textSize="18sp"
+            android:minLines="1"
+            android:maxLines="3"
             android:layout_toLeftOf="@id/btn_send_msg"/>
 
     </RelativeLayout>
